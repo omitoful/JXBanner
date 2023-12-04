@@ -159,6 +159,7 @@ import UIKit
         inactiveLayer = [CALayer]()
         inactiveOriginFrame = []
         // set new layers
+        guard numberOfPages > 0 else { return }
         for _ in 0 ..< numberOfPages - 1 {
             let layer = CALayer()
             contentView.layer.addSublayer(layer)
